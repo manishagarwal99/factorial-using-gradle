@@ -1,11 +1,14 @@
 import org.junit.jupiter.api.Test;
 
 class FactorialFinderTest {
-
-    @Test
+    //use @setup
+    //check test template for exception
+    @Test()
     void shouldReturnOneForZero() {
+        int actual_fact, expected_fact=1;
         FactorialFinder factorialFinder = new FactorialFinder();
-        assert factorialFinder.getFactorial(0) == 1;
+        actual_fact = factorialFinder.getFactorial(0);
+        assert actual_fact==expected_fact;
     }
 
     @Test
